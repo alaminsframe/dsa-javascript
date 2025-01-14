@@ -1,5 +1,4 @@
 function isPowerOfTwo(n){
-    let arr=[];
     for(let i= 0; i<=Math.ceil(Math.sqrt(n)); i++){
         if(n === 2**i) return true;
     }
