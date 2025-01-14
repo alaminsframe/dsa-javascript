@@ -7,3 +7,6 @@ function fibonacchi(n){
 }
 
 console.table(fibonacchi(10));
+
+
+// Big-O = O(n)
