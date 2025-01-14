@@ -1,7 +1,27 @@
+// function isPrime(n){
+//     if (n<2) return `${n} is not prime`;
+    
+//     for(let i=2; i<n; i++){
+//         if(n%i===0){
+//             return `${n} is not prime`;
+//         }
+//     }
+//     return `${n} is prime`;
+    
+// }
+
+// Big-O = O(n)
+
+
+
+
+
 function isPrime(n){
     if (n<2) return `${n} is not prime`;
     
-    for(let i=2; i<n; i++){
+    for(let i=2; i<=Math.sqrt(n); i++){
+        //console.log(i);
+        
         if(n%i===0){
             return `${n} is not prime`;
         }
@@ -10,7 +30,8 @@ function isPrime(n){
     
 }
 
-console.log(isPrime(35));
+
+console.log(isPrime(89));
 
 
-// Big-O = O(n)
+// Big-O = O(sqrt(n))
