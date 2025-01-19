@@ -7,4 +7,7 @@ function linearSearch(arr,n){
     return -1;
 }
 console.log(linearSearch(['a','b','c','d'],'d'));
-console.log(linearSearch([3,4,21,6,8],4));
+console.log(linearSearch([0,1,2,3,4,6,8],4));
+console.log(linearSearch([1,2,3,4,6,8],21));
+
+//big-O = O(n)
