@@ -9,7 +9,7 @@ function binarySearch(arr,target){
 
         if(arr[midIndex]<target){
             leftIndex =midIndex+1;
-        }else if(arr[midIndex]>target){
+        }else{
             rightIndex = midIndex-1;
         }
     }
