@@ -34,5 +34,6 @@ function bubbleSort(arr) {
     return arr;
 }
 
-
 console.log(bubbleSort([34,42,23,46,21,53]));
+
+//big-O = O(n^2)
