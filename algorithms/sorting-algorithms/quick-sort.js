@@ -18,3 +18,6 @@ function quickSort(arr) {
 }
 
 console.log(quickSort([32,42,23,56,2,-1,5,-3]));
+
+// Worst case = O(n^2)
+// Avg case = O(nlogn)
