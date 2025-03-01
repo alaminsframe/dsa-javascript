@@ -8,3 +8,4 @@ function cartesianProduct(arr1,arr2) {
     return result;
 }
 console.log(cartesianProduct([1],[3,4]));
+// Big-O = O(n^2)
