@@ -20,9 +20,10 @@ function merge(lefArr, rightArr) {
 }
 
 console.log(mergeSort([32,42,23,56,2,-1,5,-3]));
+//big-O = O(nlogn)
+
 
 // another approach
-
 /*
 function mergeSort(arr) {
     // If the array has only one element, it's already sorted
@@ -61,5 +62,7 @@ function merge(left, right) {
 
 // Example usage:
 const arr = [38, 27, 43, 3, 9, 82, 10];
-console.log(mergeSort(arr)); // Output will be a sorted array
+console.log(mergeSort(arr));
+
+//big-O = O(nlogn)
 */
