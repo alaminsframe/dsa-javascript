@@ -3,20 +3,20 @@ function mergeSort(arr) {
         return arr;
     }
     const mid = Math.floor(arr.length/2);
-    const lefArr = arr.slice(0, mid)
+    const leftArr = arr.slice(0, mid)
     const rightArr = arr.slice(mid)
-    return merge(mergeSort(lefArr), mergeSort(rightArr));
+    return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
-function merge(lefArr, rightArr) {
+function merge(leftArr, rightArr) {
     const result =[];
-    while (lefArr.length && rightArr.length) {
-        if (lefArr[0] < rightArr[0]) {
-            result.push(lefArr.shift())
+    while (leftArr.length && rightArr.length) {
+        if (leftArr[0] < rightArr[0]) {
+            result.push(leftArr.shift())
         }else(
             result.push(rightArr.shift())
         )
     }
-    return [...result, ...lefArr, ...rightArr];
+    return [...result, ...leftArr, ...rightArr];
 }
 
 console.log(mergeSort([32,42,23,56,2,-1,5,-3]));
