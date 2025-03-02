@@ -6,3 +6,4 @@ function climbingStaircase(n) {
     return numberOfWays[n-1]
 }
 console.log(climbingStaircase(5));
+// Big-O = O(n)
