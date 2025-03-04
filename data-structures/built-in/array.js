@@ -43,3 +43,15 @@ const combined = array1.concat(array2);
 console.log(combined); // [1, 2, 3, 4, 5, 6]
 
 
+//Big-O time complexity
+
+// Accessing an element: O(1)
+// Inserting at the end: O(1) (amortized)
+// Removing from the end: O(1)
+// Inserting at the beginning: O(n)
+// Removing from the beginning: O(n)
+// Finding an element: O(n)
+// Iterating over the array: O(n)
+// Concatenating arrays: O(n + m)
+// Splicing elements: O(n)
+// Sorting the array: O(n log n) (average)
