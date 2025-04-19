@@ -25,8 +25,7 @@ dogDetails.age = 6; // Modifying existing property
 // 6. Object with Computed Property Names
 const dynamicKey = "color";
 const carDetails = { [dynamicKey]: "Red", model: "BMW", year: 2021 }; //Dynamic key using a variable
-console.log(carDetails);
-
+//console.log(carDetails);
 
 // 7. Object Constructor (not commonly used)
 const person2 = new Object();
@@ -34,4 +33,22 @@ person2.name = "Jane";
 person2.age = 28; 
 person2.country = "Canada"; 
 // Object created using constructor
-console.log(person2);
+//console.log(person2);
+
+// 8. Object with Getter and Setter Methods
+const userDetails = {
+  firstName: "John", 
+  lastName: "Doe",
+  another: '',
+  get fullName() { 
+        return this.firstName + " " + this.lastName ; 
+    }, // Getter for fullName
+  set fullName(name) { 
+        const [first, last] = name.split(" "); 
+        this.firstName = first; 
+        this.lastName = last; 
+    }// Setter for fullName
+};
+console.log(userDetails.fullName);
+userDetails.fullName = "Alice Smith"; // Using setter
+console.log(userDetails.fullName);
