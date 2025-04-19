@@ -31,7 +31,7 @@ console.log(evens); // [2, 4, 6]
 //The reduce() function applies a reducer function to each element of the array, accumulating the result into a single value. It’s useful for operations like summing up values, finding averages, or combining data.
 const numbers3 = [1, 2, 3, 4, 5];
 const sum = numbers3.reduce((acc, num) => acc + num, 0);
-console.log(sum); // 15
+//console.log(sum); // 15
 
 
 
