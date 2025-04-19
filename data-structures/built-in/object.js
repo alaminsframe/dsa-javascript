@@ -86,3 +86,15 @@ Object.seal(sealedObj); //
 sealedObj.age = 29; // Allowed modification
 sealedObj.city = "New York"; // Won't add property
 console.log(sealedObj); // { name: "Sarah", age: 29 }
+
+
+
+//Big-O time complexity
+
+// insert = O(1)
+// remove = O(1)
+// access = O(1)
+// search = O(n)
+// Object.keys = O(n)
+// Object.values = O(n)
+// Object.entries = O(n)
