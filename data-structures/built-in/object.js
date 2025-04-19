@@ -11,7 +11,15 @@ const carInfo = {
 const companyDetails = {
   name: "Tech Corp", address: { street: "123 Tech Lane", city: "Tech City", zip: "12345" }, employees: 100
 }; // Nested object for address
-console.log(companyDetails);
+//console.log(companyDetails);
 
+// 4. Object with Arrays
+const studentData = { name: "Alice", age: 22, subjects: ["Math", "Science", "English"] }; // Array in object
+
+// 5. Dynamic Object Properties (Adding/Modifying properties)
+const dogDetails = { breed: "Labrador", age: 5 };
+dogDetails.color = "Yellow"; // Adding new property
+dogDetails.age = 6; // Modifying existing property
+console.log(dogDetails);
 
 
