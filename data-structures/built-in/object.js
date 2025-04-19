@@ -20,6 +20,18 @@ const studentData = { name: "Alice", age: 22, subjects: ["Math", "Science", "Eng
 const dogDetails = { breed: "Labrador", age: 5 };
 dogDetails.color = "Yellow"; // Adding new property
 dogDetails.age = 6; // Modifying existing property
-console.log(dogDetails);
+//console.log(dogDetails);
+
+// 6. Object with Computed Property Names
+const dynamicKey = "color";
+const carDetails = { [dynamicKey]: "Red", model: "BMW", year: 2021 }; //Dynamic key using a variable
+console.log(carDetails);
 
 
+// 7. Object Constructor (not commonly used)
+const person2 = new Object();
+person2.name = "Jane"; 
+person2.age = 28; 
+person2.country = "Canada"; 
+// Object created using constructor
+console.log(person2);
