@@ -55,7 +55,16 @@ userDetails.fullName = "Alice Smith"; // Using setter
 
 // 9. Object Destructuring
 const userInfo = { name: "Charlie", age: 25, country: "UK" };
-const { name: userName, age: userAge, country: userCountry } = userInfo; // Destructuring object properties into variables
-console.log(userName); // "Charlie"
-console.log(userAge); // 25
-console.log(userCountry); // "UK"
+const { name: userName, age: userAge, country: userCountry } = userInfo; 
+// Destructuring object properties into variables
+
+// console.log(userName); // "Charlie"
+// console.log(userAge); // 25
+// console.log(userCountry); // "UK"
+
+// 10. Using Object.assign() to Clone or Merge Objects
+const userObj1 = { name: "John", age: 30, country: 'USA' };
+const userObj2 = { country: "UK", job: "Engineer" };
+const mergedUserObj = Object.assign(userObj1, userObj2); // Merging objects
+console.log(mergedUserObj); // { name: "John", age: 30, country: "USA", job: "Engineer" }
+
