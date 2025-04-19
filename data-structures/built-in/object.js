@@ -49,6 +49,13 @@ const userDetails = {
         this.lastName = last; 
     }// Setter for fullName
 };
-console.log(userDetails.fullName);
+//console.log(userDetails.fullName);
 userDetails.fullName = "Alice Smith"; // Using setter
-console.log(userDetails.fullName);
+//console.log(userDetails.fullName);
+
+// 9. Object Destructuring
+const userInfo = { name: "Charlie", age: 25, country: "UK" };
+const { name: userName, age: userAge, country: userCountry } = userInfo; // Destructuring object properties into variables
+console.log(userName); // "Charlie"
+console.log(userAge); // 25
+console.log(userCountry); // "UK"
