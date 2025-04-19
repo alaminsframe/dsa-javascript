@@ -66,5 +66,23 @@ const { name: userName, age: userAge, country: userCountry } = userInfo;
 const userObj1 = { name: "John", age: 30, country: 'USA' };
 const userObj2 = { country: "UK", job: "Engineer" };
 const mergedUserObj = Object.assign(userObj1, userObj2); // Merging objects
-console.log(mergedUserObj); // { name: "John", age: 30, country: "USA", job: "Engineer" }
+//console.log(mergedUserObj); // { name: "John", age: 30, country: "USA", job: "Engineer" }
 
+// 11. Object.keys(), Object.values(), and Object.entries()
+const personDetails = { name: "Alice", age: 30, country: "Canada" };
+// console.log(Object.keys(personDetails)); // ["name", "age", "country"]
+// console.log(Object.values(personDetails)); // ["Alice", 30, "Canada"]
+// console.log(Object.entries(personDetails)); // [["name", "Alice"], ["age", 30], ["country", "Canada"]]
+
+// 12. Object.freeze(). Prevent modifications
+const frozenObj = { name: "Tom", age: 35 };
+Object.freeze(frozenObj); // Prevent modifications
+frozenObj.age = 40; // Will not modify the age property
+//console.log(frozenObj.age); // 35
+
+// 13. Object.seal(). Prevent adding/removing properties
+const sealedObj = { name: "Sarah", age: 28 };
+Object.seal(sealedObj); // 
+sealedObj.age = 29; // Allowed modification
+sealedObj.city = "New York"; // Won't add property
+console.log(sealedObj); // { name: "Sarah", age: 29 }
