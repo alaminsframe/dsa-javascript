@@ -10,7 +10,7 @@ class stack {
     }
 
     pop(){
-        if(this.stack.length === 0){
+        if(this.isEmpty()){
             return 'stack is empty.'
         }
 
@@ -18,11 +18,15 @@ class stack {
     }
 
     peek(){
-        if(this.stack.length === 0){
+        if(this.isEmpty()){
             return 'stack is empty.';
         }
 
         return this.stack[this.size()-1];
+    }
+
+    isEmpty(){
+        return this.size() === 0;
     }
 
     size(){
