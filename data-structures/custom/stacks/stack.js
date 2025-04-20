@@ -44,3 +44,13 @@ console.log(stacks.stack);
 stacks.pop()
 console.log(stacks.peek());
 console.log(stacks.size());
+
+
+
+//Big O Notation
+// push() = O(1)
+// pop() = O(1)
+// peek() = O(1)
+// isEmpty() = O(1)
+// size = O(1)
+
