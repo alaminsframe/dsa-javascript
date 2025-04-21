@@ -40,4 +40,9 @@ console.log(q.items);
 q.dequeue(); // removes Alice
 console.log(q.items);
 
-  
+//Big O
+
+// Enqueue	= O(1)
+// Dequeue	=O(1)
+// Peek = O(1)
+// Size = O(1)
