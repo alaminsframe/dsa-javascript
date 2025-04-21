@@ -42,7 +42,7 @@ console.log(q.items);
 
 //Big O
 
-// Enqueue	= O(1)
-// Dequeue	=O(1)
-// Peek = O(1)
-// Size = O(1)
+// Enqueue	push()	O(1)	Adding to the end of an array is fast.
+// Dequeue	shift()	O(n)	Removing from the front requires shifting all elements.
+// Peek	front()	O(1)	Accessing index 0 is direct.
+// Size	.length	O(1)	Getting the length of the array is constant time.
