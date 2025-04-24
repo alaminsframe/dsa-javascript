@@ -1,4 +1,3 @@
-const { throwIfDetached } = require("puppeteer")
 
 class  Queue{
     constructor(){
