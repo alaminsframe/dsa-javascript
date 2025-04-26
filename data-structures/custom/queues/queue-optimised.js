@@ -46,3 +46,12 @@ queue.print()
 queue.dequeue()
 queue.print()
 
+
+
+// Time Complexity
+// enqueue	O(1)
+// dequeue	O(1)
+// isEmpty	O(1)
+// peek	O(1)
+// size	O(1)
+// print	O(n)
